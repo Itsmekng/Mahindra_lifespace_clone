@@ -1,0 +1,93 @@
+.bgImg {
+  min-height: 100vh;
+  background: 
+    linear-gradient(
+      to right,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0.15) 45%,
+      rgba(0,0,0,0.35) 100%
+    ),
+    url("./assets/images/a607d4da2bd0bbf94146dbb55346a24c7fd79e14.png");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* IE (old but safe) */
+* {
+  -ms-overflow-style: none;
+}
+
+.blueprint {
+  position: relative;
+  overflow: hidden;
+}
+
+.blueprint::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: url("./assets/images/69c1c9e6161ebf4d1bd9936e8a73f3769feead0a.png") 
+              center / cover no-repeat;
+
+  filter: blur(15px);
+  transform: scale(1.15); 
+  z-index: 0;
+}
+
+.blueprint > * {
+  position: relative;
+  z-index: 1;
+}
+
+.centerwebpack{
+  text-align: -webkit-center;
+}
+
+.bgImage {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),
+    url("./assets/images/415b6d00158141c2286e3f3b3bb3dc2d3ba2dfee.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgImage2 {
+  background: none;
+
+}
+
+@media (max-width: 500px) {
+  .bgImage2 {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),
+    url("./assets/images/415b6d00158141c2286e3f3b3bb3dc2d3ba2dfee.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position-y: 430px;
+
+}
+}
+
+
